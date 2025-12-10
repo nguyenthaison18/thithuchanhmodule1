@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraPhanSo(ts1, ms1, ts2, ms2) {
+        if (ms1 === 0 || ms2 === 0) {
+            return false;
+        }
+        return (ts1 * ms2) === (ts2 * ms1);
+    }
+
+    let tu1 = parseInt(prompt("Nhập tử số phân số thứ nhất:"));
+    let mau1 = parseInt(prompt("Nhập mẫu số phân số thứ nhất:"));
+
+    let tu2 = parseInt(prompt("Nhập tử số phân số thứ hai:"));
+    let mau2 = parseInt(prompt("Nhập mẫu số phân số thứ hai:"));
+
+    if (kiemTraPhanSo(tu1, mau1, tu2, mau2)) {
+        console.log("Hai phân số bằng nhau");
+    } else {
+        console.log("Hai phân số KHÔNG bằng nhau");
+    }
+
+</script>
+</body>
+</html>
