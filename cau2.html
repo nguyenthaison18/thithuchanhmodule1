@@ -6,25 +6,24 @@
 </head>
 <body>
 <script>
-    function kiemTraPhanSo(ts1, ms1, ts2, ms2) {
-        if (ms1 === 0 || ms2 === 0) {
+    function tusomauso(ts1, ms1, ts2, ms2) {
+        if (ms1 == 0 || ms2 == 0) {
             return false;
-        }
-        return (ts1 * ms2) === (ts2 * ms1);
+        } else
+            return (ts1 * ms2) == (ts2 * ms1);
     }
 
-    let tu1 = parseInt(prompt("Nhập tử số phân số thứ nhất:"));
-    let mau1 = parseInt(prompt("Nhập mẫu số phân số thứ nhất:"));
+    let tuso1 = parseInt(prompt("Nhập tử số thứ nhất:"));
+    let mau1 = parseInt(prompt("Nhập mẫu số thứ nhất:"));
 
-    let tu2 = parseInt(prompt("Nhập tử số phân số thứ hai:"));
-    let mau2 = parseInt(prompt("Nhập mẫu số phân số thứ hai:"));
+    let tuso2 = parseInt(prompt("Nhập tử số thứ hai:"));
+    let mau2 = parseInt(prompt("Nhập mẫu số thứ hai:"));
 
-    if (kiemTraPhanSo(tu1, mau1, tu2, mau2)) {
+    if (tusomauso(tuso1, mau1, tuso2, mau2)) {
         console.log("Hai phân số bằng nhau");
     } else {
-        console.log("Hai phân số KHÔNG bằng nhau");
+        console.log("Hai phân số không bằng nhau");
     }
-
 </script>
 </body>
 </html>

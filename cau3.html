@@ -5,6 +5,58 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let sotietkiem = function (maso, loaitietkiem, hovaten, cmnd, ngaymo, sotiengui) {
+        this.maso = maso;
+        this.loaitietkiem = loaitietkiem;
+        this.hovaten = hovaten;
+        this.cmnd = cmnd;
+        this.ngaymo = ngaymo;
+        this.sotiengui = sotiengui;
 
+        this.getmaso = function () {
+            return this.maso;
+        }
+        this.getloaitietkiem = function () {
+            return this.loaitietkiem;
+        }
+        this.gethovaten = function () {
+            return this.hovaten;
+        }
+        this.getcmnd = function () {
+            return this.cmnd;
+        }
+        this.getngaymo = function () {
+            return this.ngaymo;
+        }
+        this.getsotiengui = function () {
+            return this.sotiengui;
+        }
+        this.setmaso = function (maso) {
+            this.maso = maso;
+        }
+        this.setloaitietkiem = function (loaitietkiem) {
+            this.loaitietkiem = loaitietkiem;
+        }
+        this.sethovaten = function (hovaten) {
+            this.hovaten = hovaten;
+        }
+        this.setcmnd = function (cmnd) {
+            this.cmnd = cmnd;
+        }
+        this.setngaymo = function (ngaymo) {
+            this.ngaymo = ngaymo;
+        }
+    }
+    let new_sotietkiem = new sotietkiem("NTS18", "24 Tháng", "Nguyễn Thái Sơn", "03838383883383", "10/12/2025", "937.293.923");
+    let maso = new_sotietkiem.getmaso();
+    let loaitietkiem = new_sotietkiem.getloaitietkiem();
+    let hovaten = new_sotietkiem.gethovaten();
+    let cmnd = new_sotietkiem.getcmnd();
+    let ngaymo = new_sotietkiem.getngaymo();
+    let sotiengui = new_sotietkiem.getsotiengui();
+
+    document.write("Mã số khách hàng: " + maso + "<br>" + "Số tháng gửi: " + loaitietkiem + "<br>" + "Họ và tên: " + hovaten + "<br>" + "Số căn cước công dân: " + cmnd + "<br>" + "Ngày mở: " + ngaymo + "<br>" + "Số tiền gửi: " + sotiengui);
+</script>
 </body>
 </html>
